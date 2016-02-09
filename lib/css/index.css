@@ -96,6 +96,6 @@ p {
     text-align: center;
 }
 
-#form .field::-webkit-input-placeholder { color:#000; text-transform: uppercase; }
-#form .field::-moz-placeholder { color:#000; text-transform: uppercase; }
-#form .field:-ms-input-placeholder { color:#000; text-transform: uppercase; }
+#form .field::-webkit-input-placeholder { color:black; text-transform: uppercase; }
+#form .field::-moz-placeholder { color:black; text-transform: uppercase; }
+#form .field:-ms-input-placeholder { color:black; text-transform: uppercase; }
