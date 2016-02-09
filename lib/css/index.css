@@ -78,7 +78,7 @@ p {
 
 #form .field {
 	background-color: white;
-	color: #f27a99;
+	color: black;
 	border: 1px solid black;
 	padding: 2px;
     width: 100%;
@@ -87,7 +87,7 @@ p {
 #form .sbm {
 	padding: 2px 4px;
 	background-color: black;
-	border:1px solid #5675b9;
+	border:1px solid black;
     width: 50%;
     margin-left: 25%;
 	color: white;
@@ -96,6 +96,6 @@ p {
     text-align: center;
 }
 
-#form .field::-webkit-input-placeholder { color:black; text-transform: uppercase; }
-#form .field::-moz-placeholder { color:black; text-transform: uppercase; }
-#form .field:-ms-input-placeholder { color:black; text-transform: uppercase; }
+#form .field::-webkit-input-placeholder { color:#000; text-transform: uppercase; }
+#form .field::-moz-placeholder { color:#000; text-transform: uppercase; }
+#form .field:-ms-input-placeholder { color:#000; text-transform: uppercase; }
