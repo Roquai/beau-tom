@@ -4,9 +4,9 @@ error_reporting(0);
 if (isset($_POST["email"]) && $_POST["email"] != '') {
     include('mailchimp/Mailchimp.php');
 
-    $MailChimp = new MailChimp('6a148b2d50ec62139c9e65ae5e2d58e2-us11');
+    $MailChimp = new MailChimp('f70fe0934e2ba6f9b6625519d5b0ddae-us12');
     $result    = $MailChimp->call('lists/subscribe', [
-      'id'                => 'a630ab2ef0',
+      'id'                => '75f998e12a',
       'email'             => [ 'email' => $_POST["email"] ],
       'merge_vars'        => ['FNAME' => $_POST["fname"], 'LNAME' => $_POST["lname"], 'WHO' => $_POST["who"], 'SOURCE' => 'website'],
       'double_optin'      => false,
@@ -30,17 +30,6 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 		<link rel="stylesheet" href="lib/css/index.css" type="text/css" media="screen" />
 
 		<link rel="icon" type="image/png" href="lib/img/favicon.png" />
-
-        <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-mixpanel.init("7545ccd1e8622b5d45a1255a5637deb5");</script><!-- end Mixpanel -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                mixpanel.track_forms("#form", "Sign up");
-            });
-        </script>
 
 	</head>
 	<body>
