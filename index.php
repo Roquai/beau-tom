@@ -8,7 +8,7 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
     $result    = $MailChimp->call('lists/subscribe', [
       'id'                => '75f998e12a',
       'email'             => [ 'email' => $_POST["email"] ],
-      'merge_vars'        => ['FNAME' => $_POST["fname"], 'LNAME' => $_POST["lname"], 'WHO' => $_POST["who"], 'SOURCE' => 'website'],
+      'merge_vars'        => ['FNAME' => $_POST["fname"], 'LNAME' => $_POST["lname"], 'SOURCE' => 'website'],
       'double_optin'      => false,
       'update_existing'   => true,
       'send_welcome'      => true,
@@ -38,7 +38,7 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 				<p>Nos abonnements seront disponibles très bientôt !</p>
 				<?php if ($ok) {
     ?>
-			      <p class="green">Merci pour votre inscription ! Merci Lordi vous prévient lors de son lancement.</p>
+			      <p class="green">Merci pour votre inscription ! Beau Tom vous prévient lors de son lancement.</p>
 			    <?php
 
 } else {
@@ -49,14 +49,6 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" />
 						<input id="email" class="field" type="email" name="email" placeholder="E-mail" />
 						<input id="sbm" class="sbm" type="submit" value="GO&nbsp;!" />
-						<p>
-				    		Est-ce pour vous ou pour un proche&nbsp;?<br />
-							<input type="radio" name="who" value="proche" checked> &nbsp;C'est pour un proche
-							<br />
-							<input type="radio" name="who" value="moi"> &nbsp;C'est pour moi
-                            <br />
-                            <input type="radio" name="who" value="autre"> &nbsp;Autre
-						</p>
 			    	</form>
 		    	<?php
 
