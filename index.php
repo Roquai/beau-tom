@@ -26,7 +26,7 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 
 		<title>Merci Lordi</title>
 
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="lib/css/index.css" type="text/css" media="screen" />
 
 		<link rel="icon" type="image/png" href="lib/img/favicon.png" />

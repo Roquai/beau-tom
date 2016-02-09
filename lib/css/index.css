@@ -14,7 +14,7 @@ html, body {
 
 body {
 	color: black;
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	line-height: 1.5em;
 	font-size: 1em;
 	text-rendering: optimizeLegibility;
@@ -84,7 +84,7 @@ p {
 }
 #form .sbm {
 	padding: 2px 4px;
-	background-color: #5675b9;
+	background-color: black;
 	border:1px solid #5675b9;
 	color: white;
 	cursor: pointer;
