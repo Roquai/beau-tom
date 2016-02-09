@@ -45,9 +45,9 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
     ?>
 					<p>Laissez vos coordonnées, vous recevrez toutes les informations d’ici quelques semaines.</p>
 					<form id="form" action="" method="post">
-				    	<input id="lname" class="field" type="text" name="lname" placeholder="Nom" />
-						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" />
-						<input id="email" class="field" type="email" name="email" placeholder="E-mail" />
+				    	<input id="lname" class="field" type="text" name="lname" placeholder="Nom" /></br>
+						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" /></br>
+						<input id="email" class="field" type="email" name="email" placeholder="E-mail" /></br>
 						<input id="sbm" class="sbm" type="submit" value="GO&nbsp;!" />
 			    	</form>
 		    	<?php
