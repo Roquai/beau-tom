@@ -53,7 +53,6 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 		    	<?php
 
 } ?>
-				<p>Merci Lordi est dans un 1er temps réservé aux habitants de Paris et sa région, très prochainement dans toutes les grandes villes partout en France !</p>
 		  	</div>
 		</div></div></div>
 	</body>
