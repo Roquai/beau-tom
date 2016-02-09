@@ -35,7 +35,6 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 	<body>
 		<div id="outer"><div id="middle"><div id="wrapper">
 		  	<div id="content">
-				<img id="logo" src="lib/img/logo.jpg" alt="Merci Lordi" />
 				<p>Nos abonnements seront disponibles très bientôt !</p>
 				<?php if ($ok) {
     ?>
