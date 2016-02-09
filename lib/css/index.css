@@ -87,6 +87,8 @@ p {
 	padding: 2px 4px;
 	background-color: black;
 	border:1px solid #5675b9;
+    width: 50%;
+    margin-left: 25%;
 	color: white;
 	cursor: pointer;
 	margin-bottom: 1em;
