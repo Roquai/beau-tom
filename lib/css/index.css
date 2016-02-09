@@ -21,7 +21,7 @@ body {
 	-ms-touch-action: double-tap-zoom;
 	-webkit-tap-highlight-color: transparent !important;
 	background-image: url(../img/beauTom.jpg);
-	background-size: 117px 129px;
+	background-size: 100%;
 	-webkit-appearance: none !important;
 	-webkit-touch-callout: none !important;
 }
