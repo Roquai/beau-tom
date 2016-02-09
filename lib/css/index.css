@@ -1,0 +1,97 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; } 
+ /* remember to define focus styles! */ :focus { outline: 0; } 
+ body { line-height: 1; color: black; background: white; } 
+ ol, ul { list-style: none; } 
+ /* tables still need 'cellspacing="0"' in the markup */ table { border-collapse: separate; border-spacing: 0; } 
+ caption, th, td { text-align: left; font-weight: normal; } 
+ blockquote:before, blockquote:after, q:before, q:after { content: ""; } 
+ blockquote, q { quotes: "" ""; } 
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: black;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
+	font-size: 1em;
+	text-rendering: optimizeLegibility;
+	-ms-touch-action: double-tap-zoom;
+	-webkit-tap-highlight-color: transparent !important;
+	background-image: url(../img/bg.jpg);
+	background-size: 117px 129px;
+	-webkit-appearance: none !important;
+	-webkit-touch-callout: none !important;
+}
+
+#outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  max-width: 500px;
+  padding: 30px;
+  background-color: white;
+}
+
+#content {
+	padding: 30px;
+	border:2px solid black;
+}
+
+#logo {
+	display: block;
+	margin: auto;
+	width: 90%;
+	height: auto;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+.green {
+	background-color: #f27a99;
+}
+
+#form {
+	background-color: #f27a99;
+	padding: 10px;
+	margin-bottom: 1em;
+	text-align: left;
+}
+
+#form .field {
+	background-color: white;
+	color: #f27a99;
+	border: 1px solid black;
+	padding: 2px;
+	width: 100px;
+	margin-bottom: 1em;
+}
+#form .sbm {
+	padding: 2px 4px;
+	background-color: #5675b9;
+	border:1px solid #5675b9;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 1em;
+}
+
+#form .field::-webkit-input-placeholder { color:#f27a99; text-transform: uppercase; }
+#form .field::-moz-placeholder { color:#f27a99; text-transform: uppercase; }
+#form .field:-ms-input-placeholder { color:#f27a99; text-transform: uppercase; }
