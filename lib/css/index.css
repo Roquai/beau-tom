@@ -80,6 +80,7 @@ p {
 	color: #f27a99;
 	border: 1px solid black;
 	padding: 2px;
+    width: 100%;
 	margin-bottom: 1em;
 }
 #form .sbm {
@@ -89,6 +90,7 @@ p {
 	color: white;
 	cursor: pointer;
 	margin-bottom: 1em;
+    text-align: center;
 }
 
 #form .field::-webkit-input-placeholder { color:#f27a99; text-transform: uppercase; }
