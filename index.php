@@ -48,12 +48,22 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 				    	<input id="lname" class="field" type="text" name="lname" placeholder="Nom" /></br>
 						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" /></br>
 						<input id="email" class="field" type="email" name="email" placeholder="E-mail" /></br>
-                        <select name="Pointure" id="foot" size="1">
-                            <option>41-42
-                            <option>43-44
-                            <option>45-46
-                            <option>47-48
-                        </select></br>
+                        <p>Pointure</p>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>41-42</span>
+                        </label>
+
+
+                        <div class="custom-field custom-select">
+                            <select name="Pointure" id="foot" size="1">
+                                <option>41-42
+                                <option>43-44
+                                <option>45-46
+                                <option>47-48
+                            </select>
+                        </div></br>
+
+
                         <select name="Taille de boxer" id="boxer" size="1">
                             <option>S
                             <option>M
