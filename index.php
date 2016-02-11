@@ -8,7 +8,7 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
     $result    = $MailChimp->call('lists/subscribe', [
       'id'                => '75f998e12a',
       'email'             => [ 'email' => $_POST["email"] ],
-      'merge_vars'        => ['FNAME' => $_POST["fname"], 'LNAME' => $_POST["lname"], 'SOURCE' => 'website'],
+      'merge_vars'        => ['FNAME' => $_POST["fname"], 'LNAME' => $_POST["lname"], 'LPOINTURE' => '', 'LSIZESHIRT' => '', 'LSIZEBOXER' => '', 'SOURCE' => 'website'],
       'double_optin'      => false,
       'update_existing'   => true,
       'send_welcome'      => true,
@@ -48,6 +48,27 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 				    	<input id="lname" class="field" type="text" name="lname" placeholder="Nom" /></br>
 						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" /></br>
 						<input id="email" class="field" type="email" name="email" placeholder="E-mail" /></br>
+                        <select name="Pointure" id="foot" size="1">
+                            <option>41-42
+                            <option>43-44
+                            <option>45-46
+                            <option>47-48
+                        </select>
+                        <select name="Taille de boxer" id="boxer" size="1">
+                            <option>S
+                            <option>M
+                            <option>L
+                            <option>XL
+                        </select>
+                        <select name="Taille de chemise" id="chemise" size="1">
+                            <option>38
+                            <option>39
+                            <option>40
+                            <option>41
+                            <option>42
+                            <option>43
+                            <option>44
+                        </select>
 						<input id="sbm" class="sbm" type="submit" value="GO&nbsp;!" />
 			    	</form>
 		    	<?php
