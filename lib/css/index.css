@@ -112,7 +112,7 @@ p {
 #form .field:-ms-input-placeholder { color:#a0a0a0; text-transform: uppercase; }
 
 #form .title {
-
+    font-size: 18px;
 }
 #form .custom-radio {
     display: inline-block;
@@ -121,7 +121,6 @@ p {
     height: 14px;
     line-height: 17px;
     font-size: 11px;
-    border: 1px solid #A0A0A0;
     background-color: rgba(255,255,255,0.84);
     text-align:center;
     vertical-align:middle;
