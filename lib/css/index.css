@@ -90,11 +90,9 @@ p {
     font-size: 16px;
 }
 #form .sbm {
-
     width: 50%;
     margin-left: 25%;
 	cursor: pointer;
-	/*margin-bottom: 1em;*/
     text-align: center;
     height: 44px;
     line-height: 44px;
@@ -108,13 +106,6 @@ p {
     padding: 0 30px;
     box-sizing: border-box;
 }
-
-
-border: 2px solid #000
-margin: 0 auto
-outline : 0
-padding : 0 30p
-box-sizing: border-box
 
 #form .field::-webkit-input-placeholder { color:#a0a0a0; text-transform: uppercase; }
 #form .field::-moz-placeholder { color:#a0a0a0; text-transform: uppercase; }
