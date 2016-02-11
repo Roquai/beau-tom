@@ -110,3 +110,26 @@ p {
 #form .field::-webkit-input-placeholder { color:#a0a0a0; text-transform: uppercase; }
 #form .field::-moz-placeholder { color:#a0a0a0; text-transform: uppercase; }
 #form .field:-ms-input-placeholder { color:#a0a0a0; text-transform: uppercase; }
+
+#form .title {
+
+}
+#form .custom-radio {
+    display: inline-block;
+    cursor: pointer;
+    witdth: 14px;
+    height: 14px;
+    line-height: 17px;
+    font-size: 11px;
+    border: 1px solid #A0A0A0;
+    background-color: rgba(255,255,255,0.84);
+    text-align:center;
+    vertical-align:middle;
+    -webkit-border-radius: 7px;
+    margin-right: 10px;
+}
+
+
+#form .size {
+
+}
