@@ -81,7 +81,7 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 
                     </br></br>
 
-                        <span class="title">Taille de chemises:</span></br>
+                        <span class="title">Taille de chemise:</span></br>
                         <label class="radio-wrapper">
                             <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">38</span>
                         </label>
