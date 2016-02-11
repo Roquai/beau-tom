@@ -60,7 +60,7 @@ mixpanel.init("5ce45ea78d05084b39c9e44545dac81a");</script><!-- end Mixpanel -->
 						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" /></br>
 						<input id="email" class="field" type="email" name="email" placeholder="E-mail" /></br></br>
 
-                        <span class="title">Pointure:</span></br>
+                        <!-- <span class="title">Pointure:</span></br>
                         <label class="radio-wrapper">
                             <input type="radio" name="pointure" class="radio" /><span class="custom-radio"></span><span class="size">41-42</span>
                         </label>
@@ -115,7 +115,7 @@ mixpanel.init("5ce45ea78d05084b39c9e44545dac81a");</script><!-- end Mixpanel -->
                             <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">44</span>
                         </label>
 
-                    </br></br>
+                    </br></br> -->
 
 						<input id="sbm" class="sbm" type="submit" value="GO&nbsp;!" />
 			    	</form>
