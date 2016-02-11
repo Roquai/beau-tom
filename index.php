@@ -53,13 +53,13 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
                             <option>43-44
                             <option>45-46
                             <option>47-48
-                        </select>
+                        </select></br>
                         <select name="Taille de boxer" id="boxer" size="1">
                             <option>S
                             <option>M
                             <option>L
                             <option>XL
-                        </select>
+                        </select></br>
                         <select name="Taille de chemise" id="chemise" size="1">
                             <option>38
                             <option>39
@@ -68,7 +68,7 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
                             <option>42
                             <option>43
                             <option>44
-                        </select>
+                        </select></br>
 						<input id="sbm" class="sbm" type="submit" value="GO&nbsp;!" />
 			    	</form>
 		    	<?php
