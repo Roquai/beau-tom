@@ -8,7 +8,7 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
     $result    = $MailChimp->call('lists/subscribe', [
       'id'                => '75f998e12a',
       'email'             => [ 'email' => $_POST["email"] ],
-      'merge_vars'        => ['FNAME' => $_POST["fname"], 'LNAME' => $_POST["lname"], 'LPOINTURE' => '', 'LSIZESHIRT' => '', 'LSIZEBOXER' => '', 'SOURCE' => 'website'],
+      'merge_vars'        => ['FNAME' => $_POST["fname"], 'LNAME' => $_POST["lname"], 'POINTURE' => $_POST["pointure"], 'SIZESHIRT' => $_POST["sizeshirt"], 'SIZEBOXER' => $_POST["sizeboxer"], 'SOURCE' => 'website'],
       'double_optin'      => false,
       'update_existing'   => true,
       'send_welcome'      => true,
@@ -47,61 +47,61 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 					<form id="form" action="" method="post">
 				    	<input id="lname" class="field" type="text" name="lname" placeholder="Nom" /></br>
 						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" /></br>
-						<input id="email" class="field" type="email" name="email" placeholder="E-mail" /></br>
+						<input id="email" class="field" type="email" name="email" placeholder="E-mail" /></br></br>
 
                         <span class="title">Pointure:</span></br>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">41-42</span>
+                            <input type="radio" name="pointure" class="radio" /><span class="custom-radio"></span><span class="size">41-42</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">43-44</span>
+                            <input type="radio" name="pointure" class="radio" /><span class="custom-radio"></span><span class="size">43-44</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">45-46</span>
+                            <input type="radio" name="pointure" class="radio" /><span class="custom-radio"></span><span class="size">45-46</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">47-48</span>
+                            <input type="radio" name="pointure" class="radio" /><span class="custom-radio"></span><span class="size">47-48</span>
                         </label>
 
                     </br></br>
 
                         <span class="title">Taille de boxer:</span></br>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">S</span>
+                            <input type="radio" name="sizeboxer" class="radio" /><span class="custom-radio"></span><span class="size">S</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">M</span>
+                            <input type="radio" name="sizeboxer" class="radio" /><span class="custom-radio"></span><span class="size">M</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">X</span>
+                            <input type="radio" name="sizeboxer" class="radio" /><span class="custom-radio"></span><span class="size">X</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">XL</span>
+                            <input type="radio" name="sizeboxer" class="radio" /><span class="custom-radio"></span><span class="size">XL</span>
                         </label>
 
                     </br></br>
 
                         <span class="title">Taille de chemises:</span></br>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">38</span>
+                            <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">38</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">39</span>
+                            <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">39</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">40</span>
+                            <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">40</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">41</span>
+                            <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">41</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">42</span>
+                            <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">42</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">43</span>
+                            <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">43</span>
                         </label>
                         <label class="radio-wrapper">
-                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span class="size">44</span>
+                            <input type="radio" name="sizeshirt" class="radio" /><span class="custom-radio"></span><span class="size">44</span>
                         </label>
 
                     </br></br>
