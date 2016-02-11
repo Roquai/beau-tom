@@ -48,37 +48,64 @@ if (isset($_POST["email"]) && $_POST["email"] != '') {
 				    	<input id="lname" class="field" type="text" name="lname" placeholder="Nom" /></br>
 						<input id="fname" class="field" type="text" name="fname" placeholder="Prénom" /></br>
 						<input id="email" class="field" type="email" name="email" placeholder="E-mail" /></br>
-                        <p>Pointure</p>
+
+                        <span class="title">Pointure:</span></br>
                         <label class="radio-wrapper">
                             <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>41-42</span>
                         </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>43-44</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>45-46</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>47-48</span>
+                        </label>
 
+                        </br>
 
-                        <div class="custom-field custom-select">
-                            <select name="Pointure" id="foot" size="1">
-                                <option>41-42
-                                <option>43-44
-                                <option>45-46
-                                <option>47-48
-                            </select>
-                        </div></br>
+                        <span class="title">Taille de boxer:</span></br>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>S</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>M</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>X</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>XL</span>
+                        </label>
 
+                        </br>
 
-                        <select name="Taille de boxer" id="boxer" size="1">
-                            <option>S
-                            <option>M
-                            <option>L
-                            <option>XL
-                        </select></br>
-                        <select name="Taille de chemise" id="chemise" size="1">
-                            <option>38
-                            <option>39
-                            <option>40
-                            <option>41
-                            <option>42
-                            <option>43
-                            <option>44
-                        </select></br>
+                        <span class="title">Taille de chemises:</span></br>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>38</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>39</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>40</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>41</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>42</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>43</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="release" class="radio" /><span class="custom-radio"></span><span>44</span>
+                        </label>
+
+                        </br>
+                        
 						<input id="sbm" class="sbm" type="submit" value="GO&nbsp;!" />
 			    	</form>
 		    	<?php
